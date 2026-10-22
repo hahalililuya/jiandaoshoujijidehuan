@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11141b">
+  <title>捡手机模拟器</title>
+  <link rel="stylesheet" href="styles.css?v=20261027-focused-edit-v11">
+  <script defer src="icons.js"></script>
+  <script defer src="runtime.js?v=20261027-focused-edit-v11"></script>
+  <script defer src="apps.js?v=20261027-focused-edit-v11"></script>
+  <script defer src="editor-overlay.js?v=20261027-focused-edit-v11"></script>
+  <script defer src="app.js?v=20261027-focused-edit-v11"></script>
+</head>
+<body>
+  <div class="workspace">
+    <aside class="sidebar">
+      <a class="brand" href="./index.html"><span class="brand-mark" data-icon="phone"></span><span>捡手机模拟器<small></small></span></a>
+      <div class="workspace-label">创作工作台 <span>LOCAL</span></div>
+      <nav id="navigation" aria-label="内容分类"></nav>
+      <div class="sidebar-bottom"><span class="local-dot"></span> <p><br></p><span class="version">STUDIO V1.0 / OFFLINE FIRST</span></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div class="breadcrumb">我的工作区 <span>/</span> <strong id="project-name">林间来信</strong></div><div class="save-state" id="save-state" role="status">草稿已就绪</div></header>
+      <div class="workbody">
+        <section class="editor-pane" aria-label="剧情内容编辑">
+          <div class="page-heading"><div><div class="eyebrow">MAKE SMALL WORLDS, TELL BIG STORIES</div><h1 id="section-title">手机设定</h1><p id="section-description"></p></div><span class="chapter-number" id="chapter-number">01</span></div>
+          <div class="project-actions"><button id="export-html" class="button primary"><span data-icon="download"></span>导出互动手机</button><button id="export-json" class="button"><span data-icon="download"></span>备份 JSON</button><button id="import-json" class="button"><span data-icon="upload"></span>导入</button><input type="file" id="json-file" accept=".json,application/json" hidden></div>
+          <div class="privacy-note"><span data-icon="lock"></span><span>数据只保存在当前浏览器。请定期备份；密码仅为剧情互动，不提供加密保护。</span></div>
+          <div id="editor"></div>
+          <footer class="editor-footer"><span>你的故事，只属于你。</span><span>ORIGINAL STORIES / IN YOUR POCKET</span></footer>
+        </section>
+        <aside class="preview-pane" aria-label="实时预览区"><div class="preview-header"><span><i></i> 实时预览</span><span class="preview-badge">INTERACTIVE</span></div><div class="preview-stage"><div class="preview-orbit"></div><div id="phone-preview"></div></div><div class="preview-controls"><button class="button" id="preview-mode" aria-pressed="true">编辑模式 · 切换体验</button><button class="button" id="preview-add-message">新增消息</button><button class="button" id="preview-reset">重置剧情</button><button class="button" id="preview-lock"><span data-icon="lock"></span>锁屏</button><button class="button" id="preview-home"><span data-icon="home"></span>桌面</button></div><p id="preview-edit-help" class="preview-caption">点击姓名/头像、消息、照片详情、备忘录正文、社交主页或帖子编辑。计时和自动锁屏暂停。</p><p class="preview-caption">每一次修改，都会在这里发生。<br><span>点击屏幕探索 · 可用数字键输入密码</span></p><div class="preview-info"><span>剧情模式</span><b>本地交互 / 无外部请求</b></div></aside>
+      </div>
+    </main>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
