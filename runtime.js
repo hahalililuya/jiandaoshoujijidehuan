@@ -90,6 +90,48 @@ window.PhoneStory = (function PhoneStoryFactory() {
 .ps-app-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:24px 5px;padding:21px 12px}.ps-app{gap:6px;padding:0;font-size:10px!important;text-shadow:0 1px 4px #0006;min-width:0}.ps-app-icon{width:51px;height:51px;border-radius:12px;overflow:hidden;box-shadow:0 3px 7px #0002}.ps-app-icon svg{width:100%;height:100%}.ps-app-icon.chat{background:linear-gradient(#5ee777,#16bd41)}.ps-app-icon.photo,.ps-app-icon.note{background:#fff}.ps-home-lock{align-self:center;background:#0002;color:#fff;border-radius:20px;padding:7px 13px;display:flex;align-items:center;gap:5px;font-size:10px!important;margin:auto 0 12px;backdrop-filter:blur(15px)}.ps-home-lock svg{width:12px;height:12px}.ps-dock{margin:0 9px 9px;min-height:77px;border-radius:26px;padding:13px 15px;gap:22px;justify-content:center;background:#ffffff40;border:1px solid #ffffff28;backdrop-filter:blur(28px) saturate(1.6);-webkit-backdrop-filter:blur(28px) saturate(1.6)}.ps-dock button{padding:0;background:none;display:block}.ps-homebar{width:106px;opacity:1}
 .ps-toolbar{height:34px;min-height:34px;flex-shrink:0;padding:0 10px;border-bottom:1px solid #d1d1d680;background:#f9f9f9ed;gap:7px}.ps-toolbar strong{font-size:15px;font-weight:600}.ps-back{color:#007aff;width:30px;min-height:34px}.ps-top-home svg{width:18px;height:18px}.ps-large-title{font-size:28px;letter-spacing:-1px;margin:9px 17px 15px;line-height:1.15;font-weight:750}.ps-section-meta{color:#8e8e93;font-size:11px;margin:0 17px 14px}.ps-avatar{border-radius:50%;background:linear-gradient(#b5bac4,#8a929f);color:#fff;font-weight:500}.ps-contact{padding:13px 14px;gap:10px;border-bottom-color:#e5e5ea!important}.ps-contact-copy strong{font-size:14px}.ps-contact-copy p{margin-top:5px;font-size:12px;color:#8e8e93}.ps-contact-time{color:#8e8e93;font-size:10px}.ps-messages{background:#fff;padding:15px 12px}.ps-message-row{width:auto;max-width:89%;gap:0}.ps-message .ps-avatar{display:none}.ps-message-time{font-size:9px;color:#8e8e93}.ps-bubble{max-width:100%;border-radius:17px 17px 17px 5px;background:#e9e9eb;padding:8px 12px;line-height:1.5;font-size:13px;box-shadow:none}.ps-message.right .ps-bubble{background:#32c75a;color:#fff;border-radius:17px 17px 5px 17px}.ps-chat-footer{background:#f8f8fa;border-top:1px solid #e5e5ea;color:#8e8e93;padding:12px}.ps-photo-grid{gap:2px;padding:0}.ps-photo-caption{text-align:center;color:#636366}.ps-screen-photo .ps-display,.ps-screen-photo .ps-toolbar{background:#000;color:#fff}.ps-screen-photo .ps-back{color:#fff}.ps-photo-full,.ps-screen-photo .ps-photo-caption{background:#000;color:#fff}.ps-screen-notes .ps-display{background:#f2f2f7}.ps-screen-notes .ps-toolbar,.ps-screen-note .ps-toolbar{background:transparent}.ps-screen-notes .ps-back,.ps-screen-note .ps-back{color:#b58500}.ps-note-list{margin:0 13px;border-radius:12px;overflow:hidden}.ps-note-row{padding:14px 15px;border-bottom-color:#e5e5ea!important}.ps-note-row strong{font-size:14px}.ps-note-row p{color:#8e8e93;line-height:1.4;margin-top:5px}.ps-note-detail{background:#fff;padding:16px 18px;line-height:1.7}.ps-note-detail h2{font-size:24px;letter-spacing:-.6px}.ps-note-detail small{display:block;text-align:center;color:#8e8e93;margin:8px 0 20px}.ps-note-detail p{margin:0}.ps-empty{color:#8e8e93}.ps button:focus-visible,.ps [role="button"]:focus-visible{outline:3px solid #007aff;outline-offset:2px}.ps-light button:focus-visible,.ps-light [role="button"]:focus-visible{outline-color:#fff}.ps-scroll{scroll-behavior:smooth}
 .ps-screen-lock .ps-page{touch-action:pan-x}.ps .ps-avatar .ps-person{width:100%;height:100%}
+/* SMS layout also ships in standalone exports. */
+.ps-sms-list{display:flex;flex-direction:column;flex:1;min-height:0;background:white}.ps-sms-list header{display:flex;align-items:center;padding:0 10px;height:44px}.ps-sms-list header span{flex:1}.ps-sms-list header button,.ps-sms-thread-head>button{background:none;color:#007aff;min-width:44px;min-height:44px;padding:10px}.ps-sms-list h1{font-size:30px;margin:4px 17px 10px;letter-spacing:-1px}.ps-sms-search{display:flex;align-items:center;gap:6px;background:#eeeef0;border-radius:9px;margin:0 16px 12px;padding:7px;color:#8e8e93}.ps-sms-search input{border:0;background:none;min-width:0;width:100%;outline:none;color:#222}.ps-sms-list .ps-contact{position:relative;align-items:start;min-height:76px;border:0!important;padding:12px 16px}.ps-sms-list .ps-contact:after{content:'';position:absolute;left:68px;right:0;bottom:0;height:1px;background:#e5e5ea}.ps-sms-list .ps-contact-copy p{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;line-height:1.35;padding-right:8px}.ps-sms-list .ps-contact-time{position:absolute;right:14px;top:13px;max-width:100px}.ps-sms-list .ps-contact-copy strong{padding-right:75px}.ps-sms-thread-head{position:relative;background:#f5f5f7;border-bottom:1px solid #ddd;min-height:90px;flex-shrink:0;padding:2px 0 8px}.ps-sms-thread-head>button{position:absolute;left:0;top:8px}.ps-sms-thread-head>div{display:flex;align-items:center;flex-direction:column;gap:5px}.ps-sms-thread-head .ps-avatar{width:49px;height:49px;background:#aaaeb6}.ps-sms-thread-head strong{font-size:11px;font-weight:500}.ps-compose{display:flex;align-items:center;gap:7px;padding:5px 10px;background:#fafafa;flex-shrink:0}.ps-compose .ps-story-input{flex:1;min-width:0;min-height:36px;margin:0;padding:7px 11px!important;overflow:hidden;white-space:pre-wrap}.ps-compose>span{color:#929298;display:flex}.ps-compose .ps-send{padding:0;min-width:44px;min-height:44px;background:none;color:#32c75a}.ps-message{margin-bottom:5px}.ps-message-time{margin:6px 0;font-size:9px;line-height:1.3}.ps-bubble{padding:7px 11px;line-height:1.4}.ps-sms-messages .ps-bubble{position:relative;border-radius:16px;background:#e9e9eb}.ps-sms-messages .ps-message.right .ps-bubble{background:#34c759;border-radius:16px}.ps-sms-messages .ps-bubble:before{content:'';position:absolute;left:-4px;bottom:0;width:10px;height:11px;background:#e9e9eb;border-bottom-right-radius:8px}.ps-sms-messages .right .ps-bubble:before{left:auto;right:-4px;background:#34c759;border-radius:0 0 0 8px}.ps-sms-messages{padding:10px 14px}.ps-sms-messages .ps-message-row{max-width:82%}
+/* Match existing Weibo toolbar geometry; normalized SMS reference, not pixel tracing. */
+.ps-sms-list{container-type:inline-size}.ps-sms-list header{position:relative;display:block;height:38px;min-height:38px;padding:0;flex-shrink:0}.ps-sms-list header button{position:absolute;top:0;width:29px;min-width:29px;height:38px;min-height:38px;padding:0;display:flex;align-items:center;justify-content:center}.ps-sms-list header button:before{content:'';position:absolute;inset:-3px -7px}.ps-sms-list header button:first-child{left:8px}.ps-sms-list header button:nth-last-child(2){right:37px}.ps-sms-list header button:last-child{right:8px}.ps-sms-list header svg{width:20px;height:20px}.ps-sms-list h1{font-size:6cqw;line-height:1.2;margin:4px 16px 8px}.ps-sms-search{height:8cqw;min-height:0;padding:0 7px;margin-bottom:10px;flex-shrink:0}.ps .ps-sms-search input,.ps .ps-sms-search input:focus{border:0!important;background:transparent!important;outline:none!important;box-shadow:none;padding:0;height:100%;font-size:3.6cqw}.ps-sms-search svg{width:4.6cqw;height:4.6cqw}
+.ps-sms-list .ps-contact{display:grid;grid-template-columns:43px minmax(0,1fr) auto;grid-template-rows:auto auto;column-gap:10px;row-gap:5px;align-items:start;min-height:76px;padding:16px}.ps-sms-list .ps-contact-avatar{grid-column:1;grid-row:1/3;align-self:center}.ps-sms-list .ps-contact-copy{display:contents;padding:0}.ps-sms-list .ps-contact-copy strong{grid-column:2;grid-row:1;padding:0;min-width:0;line-height:1.35}.ps-sms-list .ps-contact-copy p{grid-column:2/4;grid-row:2;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;width:100%;padding:0;margin:0;line-height:1.35;-webkit-line-clamp:unset}.ps-sms-list .ps-contact-time{position:static;grid-column:3;grid-row:1;align-self:start;justify-self:end;max-width:none;white-space:nowrap;margin:0;line-height:1.89}
+/* Conversation geometry uses the cropped reference width; status/home stay outside. */
+.ps-sms-thread{container-type:inline-size;display:flex;flex-direction:column;flex:1;min-height:0;background:#fff;color:#000}
+.ps-sms-thread .ps-sms-thread-head{height:19cqw;min-height:19cqw;padding:.7cqw 0 0;background:#f3f3f3;border-bottom:1px solid #d6d6d8}
+.ps-sms-thread-head>div{gap:1.1cqw}.ps-sms-thread .ps-sms-thread-head .ps-avatar{width:11.8cqw;height:11.8cqw;background:#aaaeb6}
+.ps-sms-thread-head strong{font-size:3.1cqw;line-height:4cqw;font-weight:400;max-width:75%;white-space:normal;overflow-wrap:anywhere;text-align:center}
+.ps-sms-list .ps-contact-copy strong{white-space:normal;overflow:visible;text-overflow:clip;overflow-wrap:anywhere;-webkit-line-clamp:unset}
+.ps-sms-thread .ps-sms-thread-head>button{left:-.1cqw;top:1.5cqw;width:10cqw;height:12cqw;min-width:0;min-height:0;padding:0;display:grid;place-items:center}
+.ps-sms-thread-head>button svg{width:10.8cqw;height:9.4cqw;stroke-width:1.8}
+.ps-sms-thread .ps-sms-messages{padding:2cqw 4.67cqw;min-height:0;scroll-behavior:auto}.ps-sms-messages .ps-message{margin-bottom:2.8cqw}.ps-sms-messages .ps-message-time{font-size:2.57cqw;line-height:3.4cqw;margin:1.4cqw 0;color:#8e8e93}
+.ps-sms-messages .ps-message-row{max-width:84%;width:fit-content}.ps-sms-thread .ps-bubble{font-size:3.74cqw;line-height:4.55cqw;padding:1.87cqw 2.8cqw;border-radius:4.3cqw;background:#e9e9eb;white-space:pre-wrap;overflow-wrap:anywhere}
+.ps-sms-thread .ps-message.right .ps-bubble{background:#32d151;border-radius:4.3cqw;color:white}
+/* v18: no protruding tails; rounded bubbles avoid mask-edge kinks. */
+.ps-sms-compose{height:auto;min-height:8.76cqw;padding:.28cqw 4.55cqw .28cqw 3.9cqw;gap:4.78cqw;background:#fafafa;align-items:center}
+.ps-sms-compose>span:first-child svg{width:7.1cqw;height:7.1cqw}.ps-sms-compose>span:nth-child(2) svg{width:8.2cqw;height:8.2cqw}.ps-sms-compose>span{color:#85858b;flex-shrink:0}
+.ps-sms-input-pill{display:flex;align-items:center;flex:1;min-width:0;min-height:7.94cqw;border:1px solid #c7c7cc;border-radius:4cqw;background:#fff;overflow:hidden}
+.ps .ps-sms-input-pill .ps-story-input{font-size:3.74cqw!important;line-height:4.55cqw;min-height:7.2cqw;border:0!important;border-radius:0;background:transparent;margin:0;padding:1.2cqw 1cqw 1.2cqw 2.8cqw!important;color:#8e8e93;max-height:21cqw;overflow:auto}
+.ps-sms-input-pill .ps-send{position:relative;width:7.4cqw;height:7.4cqw;min-width:7.4cqw;min-height:7.4cqw;display:grid;place-items:center;flex-shrink:0;color:#32d151}
+.ps-sms-input-pill .ps-send svg{width:6.84cqw;height:6.84cqw}.ps-sms-input-pill .ps-send:disabled{opacity:.4;cursor:default}
+/* v15 compact SMS geometry and offline interactions. */
+.ps-sms-thread .ps-sms-thread-head{height:auto;min-height:0;padding:2cqw 0;display:flex;align-items:center;justify-content:center}
+.ps-sms-thread-head>div{gap:1.1cqw;min-width:0;width:calc(100% - 88px)}.ps-sms-thread-head strong{font-size:3.5cqw;line-height:4.4cqw;max-width:100%;overflow:visible;text-overflow:clip}
+.ps-sms-list .ps-contact-copy{min-width:0;flex:1;padding-right:85px}.ps-sms-list .ps-contact-copy strong{display:block;padding-right:0;max-width:none}
+.ps-sms-thread .ps-sms-thread-head>button{left:8px;top:0;width:29px;height:38px;min-height:38px;padding:0}
+.ps-sms-thread-head>button svg{width:20px;height:20px}
+.ps-sms-messages .ps-message-time{font-size:2.9cqw;line-height:3.8cqw}
+.ps-sms-thread .ps-bubble{font-size:4.1cqw;line-height:5.1cqw}
+.ps-sms-messages .ps-bubble:before,.ps-sms-messages .ps-bubble:after{content:none}
+.ps-sms-compose{gap:2.2cqw}.ps-sms-compose>span:first-child svg,.ps-sms-compose>span:nth-child(2) svg{width:7.2cqw;height:7.2cqw;display:block}
+.ps-keyboard{background:#d1d5db;padding:8px 4px 6px;flex-shrink:0;user-select:none;animation:ps-keyboard-rise 180ms ease-out}
+.ps-keyboard>div{display:flex;justify-content:center;gap:4px;margin-bottom:7px}.ps-keyboard span{display:grid;place-items:center;background:#fff;border-radius:5px;box-shadow:0 1px 1px #77818c;width:8.5%;height:32px;font:14px/1 system-ui;color:#111;transition:background 50ms,transform 50ms}
+.ps-keyboard .ps-key-hit{background:#9bbfff;transform:translateY(-3px) scale(1.08)}.ps-keyboard-bottom span{width:18%;font-size:11px}.ps-keyboard-bottom span:nth-child(2){width:49%}
+@keyframes ps-keyboard-rise{from{transform:translateY(50%);opacity:0}to{transform:translateY(0);opacity:1}}
+.ps .ps-banner{position:absolute;top:3px;left:8px;right:8px;bottom:auto;z-index:30;display:flex;gap:9px;align-items:center;padding:11px 12px;border-radius:22px;background:rgba(247,247,245,.9);color:#171719;text-align:left;box-shadow:0 5px 20px #0003;backdrop-filter:blur(20px);touch-action:none;transition:transform 180ms ease-out,opacity 180ms ease-out}
+.ps-banner-avatar{position:relative;display:block;width:34.2px;height:34.2px;flex:0 0 34.2px;align-self:flex-start}.ps-banner-avatar>.ps-avatar{display:flex;width:34.2px;height:34.2px;border-radius:50%;overflow:hidden}.ps-banner-source{position:absolute;right:-3px;bottom:-3px;display:block;width:16px;height:16px;padding:0;border-radius:3px;background:transparent;overflow:hidden;box-shadow:none}.ps .ps-banner-source>svg,.ps .ps-banner-source>img,.ps .ps-banner-source>.ps-brand-icon{display:block;width:100%;height:100%;max-width:none;max-height:none;margin:0;padding:0;object-fit:contain;border-radius:3px;transform:none;flex-shrink:0}
+.ps-banner-copy{min-width:0;flex:1;display:flex;flex-direction:column;gap:4px;font-size:12px;align-self:flex-start}.ps-banner-top{display:flex;align-items:baseline;justify-content:space-between;gap:8px;min-width:0;line-height:1.3}.ps-banner-top b{min-width:0;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;font-weight:600}.ps-banner-top time{flex:0 0 auto;color:#777;font-size:9px;white-space:nowrap}.ps-banner-copy>.ps-banner-text{display:-webkit-box;width:100%;min-width:0;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:anywhere;white-space:normal;line-height:1.4}
+/* Shared list toolbar: SMS, recent calls, gallery. */
+.ps .ps-shared-toolbar{position:relative;display:block;height:38px;min-height:38px;padding:0;flex-shrink:0;background:transparent;border:0}.ps .ps-shared-toolbar button{position:absolute;top:0;width:29px;min-width:29px;height:38px;min-height:38px;padding:0;display:flex;align-items:center;justify-content:center;background:none;color:#007aff}.ps .ps-shared-toolbar button:before{content:'';position:absolute;inset:-3px -7px}.ps .ps-shared-toolbar button:first-child{left:8px}.ps .ps-shared-toolbar button:nth-last-child(2){right:37px}.ps .ps-shared-toolbar button:last-child{right:8px}.ps .ps-shared-toolbar button:first-child{right:auto;left:8px}.ps .ps-shared-toolbar svg{width:20px;height:20px;display:block}.ps .ps-shared-toolbar .ps-toolbar-label{width:auto;padding:0 8px;font-size:14px}
 @media(prefers-reduced-motion:reduce){.ps *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
   `;
   const displayDate = phone => {
@@ -121,13 +163,13 @@ window.PhoneStory = (function PhoneStoryFactory() {
     const onTransition=e=>transitionPage(e.detail.kind,e.detail.change);
     root.addEventListener('phone-page-transition',onTransition);
     let clockStart=Date.now(), idleStart=Date.now(),clockKey=data.phone.time+'|'+data.phone.useSystemTime;
-    const clockText=()=>{const [h,m]=data.phone.time.split(':').map(Number);const d=data.phone.useSystemTime?new Date():new Date(2000,0,1,h,m,Math.floor((Date.now()-clockStart)/1000));return d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'});};
+    const clockText=()=>{const d=session?.clock?.()||(data.phone.useSystemTime?new Date():new Date(new Date(data.phone.date+'T'+data.phone.time+':00').getTime()+Date.now()-clockStart));return d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'});};
     const touch=()=>{idleStart=Date.now();};
     ['pointerdown','keydown','input','touchstart'].forEach(type=>root.addEventListener(type,touch,{passive:true}));
     let renderedDate=displayDate(data.phone);
     const ticker=setInterval(()=>{
       if(!root.isConnected){clearInterval(ticker);session?.dispose?.();return;}
-      if(displayDate(data.phone)!==renderedDate)render();
+      const live=session?.clock?.(),today=live?`${live.getFullYear()}-${String(live.getMonth()+1).padStart(2,'0')}-${String(live.getDate()).padStart(2,'0')}`:displayDate(data.phone);if(today!==renderedDate)render();
       root.querySelectorAll('.ps-status>span:first-child,.ps-clock,[data-live-clock]').forEach(el=>{el.textContent=clockText();});
       const editing=document.activeElement?.matches('input,textarea,select,[contenteditable="true"]');
       if(editing)idleStart=Date.now();
@@ -136,12 +178,13 @@ window.PhoneStory = (function PhoneStoryFactory() {
     const session = extensions.session?.(initial, () => render(), root);
     session?.setEditing?.(editMode);
     const avatar = (name, src) => `<span class="ps-avatar">${src ? `<img src="${escape(src)}" alt="${escape(name)}的头像">` : name?.trim() ? escape(Array.from(name.trim())[0]) : '<svg class="ps-person" viewBox="0 0 100 100" aria-hidden="true" fill="currentColor"><circle cx="50" cy="35" r="13"/><path d="M24 77v-6c0-12 12-19 26-19s26 7 26 19v6Z"/></svg>'}</span>`;
+    const homeToolbar = (right='') => `<header class="ps-shared-toolbar"><button data-act="home" aria-label="返回桌面">${svg('arrow')}</button><span></span>${right}</header>`;
     const toolbar = (title, back) => `<div class="ps-toolbar"><button class="ps-back" data-act="${back}" aria-label="返回">${svg('arrow')}</button><strong>${escape(title)}</strong><button class="ps-back ps-top-home" data-act="home" aria-label="返回桌面">${svg('home')}</button></div>`;
     function render() {
       cancelPageMotion();
       pagerMotion?.finish();
       swipe=null;
-      renderedDate=displayDate(data.phone);
+      const liveDate=session?.clock?.();renderedDate=liveDate?`${liveDate.getFullYear()}-${String(liveDate.getMonth()+1).padStart(2,'0')}-${String(liveDate.getDate()).padStart(2,'0')}`:displayDate(data.phone);
       const light = ['lock','pin','home'].includes(nav.screen);
       let body = '';
       if (nav.screen === 'lock') {
@@ -171,7 +214,7 @@ window.PhoneStory = (function PhoneStoryFactory() {
         if(!n){nav.screen='notes';render();return;}
         body = toolbar('备忘录','notes') + `<div class="ps-scroll ps-note-detail"><h2>${escape(n.title)}</h2><small>${escape(n.time)}</small><p>${escape(n.text)}</p></div>`;
       }
-      if (session) body = session.render(nav, body, {toolbar, avatar, appIcon});
+      if (session) body = session.render(nav, body, {toolbar, homeToolbar, avatar, appIcon});
       const scroll = renderedScreen===nav.screen ? root.querySelector('.ps-scroll')?.scrollTop || 0 : 0;
       renderedScreen=nav.screen;
       const focused = root.contains(document.activeElement) ? document.activeElement : null;
@@ -190,13 +233,14 @@ window.PhoneStory = (function PhoneStoryFactory() {
       }
       const scroller=root.querySelector('.ps-scroll');
       if(scroller) {
-        scroller.scrollTop=scroll;
+        if(!session||!scroller.matches('.ps-messages'))scroller.scrollTop=scroll;
         const compact=()=>{
           const shell=scroller.closest('.weibo'),profile=scroller.querySelector('.ps-profile-cover');
           if(shell&&profile)shell.classList.toggle('is-compact',scroller.scrollTop>=profile.offsetHeight-34);
         };
         scroller.addEventListener('scroll',compact,{passive:true});compact();
       }
+      session?.afterRender?.({messageScroll:scroll});
       if (focused) {
         const next = Array.from(root.querySelectorAll('[data-act],[data-digit]')).find(el =>
           focusDigit !== null ? el.getAttribute('data-digit') === focusDigit :
